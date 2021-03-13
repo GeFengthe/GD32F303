@@ -89,12 +89,11 @@ void delay_us(uint32_t count)
         if(tickcnt >=ticktotal)
             break;
     }
-    
-    
-//    utick = count + get_tick();
+}
 
-//    while(get_tick() < utick){
-//    }
+void delay_ms(uint16_t ms)
+{
+    delay_us(ms*1000);
 }
 
 /*!

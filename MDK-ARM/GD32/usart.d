@@ -34,3 +34,5 @@
 .\gd32\usart.o: ..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h
 .\gd32\usart.o: ..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h
 .\gd32\usart.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\gd32\usart.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\gd32\usart.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

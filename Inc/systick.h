@@ -62,5 +62,6 @@ void systick_EnableIRQ(void);
 void systick_Disable(void);
 void systick_Enable(void);
 void systick_deinit(void);
+extern void delay_ms(uint16_t ms);
 
 #endif /* SYS_TICK_H */

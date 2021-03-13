@@ -25,6 +25,7 @@ void app_main (void *argument);
 void thread_LED(void *argument);
 void thread_KEY(void *argument);
 void jump_to_app(uint32_t addr);
+void TIM1_Config(void);
 
 /*!
     \brief      main function
@@ -41,36 +42,20 @@ int main(void)
   // nvic_vector_table_set(NVIC_VECTTAB_FLASH,0x2000);
 	nvic_vector_table_set(NVIC_VECTTAB_FLASH,0x2000);
 	#endif
-    uint8_t aesdata[40];
-    uint8_t endata[40];
-    aesdata[0] = 15;
-    aesdata[1] = 16;
-    aesdata[2] = 15;
-    aesdata[3] = 16;
-    uint16_t encrylen =0;
+    
 
 	SystemCoreClockUpdate();
 	gpio_config();
 
 	usart0_config();
-	
-	printf("FreeRTOS demo\r\n");
+    usart1_config();
+	TIM1_Config();
+//	usart1_sendata((uint8_t*)p,sizeof("FreeRTOS"));
     
-	encrylen =HAL_ADD_PKCS7Padding(aesdata,4);
-    HAL_AesEcbEncrypt(PACKET_PRIVATE_KEY,aesdata,endata,encrylen);
-    for(uint8_t i=0;i<encrylen;i++)
-    {
-        printf("endata[%d]=0x%x\r\n",i,endata[i]);
-    }
-    for(uint8_t j=0;j<encrylen;j++)
-    {
-        printf("endata[%d]=0x%x\r\n",j,aesdata[j]);
-    }
   xTaskCreate (app_main, "app_main", 64, NULL, tskIDLE_PRIORITY+1, NULL);
 
   vTaskStartScheduler();
 	
-	while(1){}
 }
 
 
@@ -94,6 +79,7 @@ void app_main (void *argument)
 void thread_LED(void *argument)
 {
 	uint32_t ulNotifiedValue;
+    char *p="USART1 IS receive\r\n";
 	FlagStatus sw_led = SET;
 	//uint8_t pcWriteBuffer[256];
 	while(1)
@@ -101,6 +87,11 @@ void thread_LED(void *argument)
         printf("the thread_LED is running \r\n");
         delay_us(100000);
         printf("test the delay\r\n");
+        if(USART1_RX_STA ==1)
+        {
+            usart1_sendata((uint8_t*)p,sizeof("USART1 IS receive\r\n"));
+            USART1_RX_STA=0;
+        }
 		if(xTaskNotifyWait(0,ULONG_MAX,&ulNotifiedValue , 500) != pdTRUE)  /* wait for an event flag 0x0001 */
 		{
 			if(sw_led == SET)
@@ -196,4 +187,34 @@ void jump_to_app(uint32_t addr)
 		/* jump to application */
 		application();
 	}
+}
+
+
+//定时器 用于串口接收   挂载在APB1下时钟120M  20ms进中断
+
+void TIM1_Config(void)
+{
+    rcu_periph_clock_enable(RCU_TIMER5);
+    timer_deinit(TIMER5);
+    timer_parameter_struct timer5;
+    timer5.prescaler = 12000-1;                            //预分频系数
+    timer5.period = 200;                                 //自动重装载值
+    timer5.clockdivision =TIMER_CKDIV_DIV1;
+    timer5.alignedmode =TIMER_COUNTER_EDGE;
+    timer5.counterdirection =TIMER_COUNTER_UP;
+    timer5.repetitioncounter = 0;
+    timer_init(TIMER5,&timer5);
+    nvic_irq_enable(TIMER5_IRQn,0,4);
+    timer_interrupt_enable(TIMER5,TIMER_INT_UP);
+    timer_disable(TIMER5);
+}
+
+void TIMER5_IRQHandler(void)
+{
+    if(timer_interrupt_flag_get(TIMER5,TIMER_INT_FLAG_UP))
+    {
+        USART1_RX_STA=1;
+        timer_interrupt_flag_clear(TIMER5,TIMER_INT_FLAG_UP);
+    }
+    timer_disable(TIMER5);
 }

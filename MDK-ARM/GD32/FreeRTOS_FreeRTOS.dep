@@ -1,5 +1,5 @@
 Dependencies for Project 'FreeRTOS', Target 'FreeRTOS': (DO NOT MODIFY !)
-F (..\Src\gd32f30x_it.c)(0x60307C84)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\gd32f30x_it.o --omf_browse .\gd32\gd32f30x_it.crf --depend .\gd32\gd32f30x_it.d)
+F (..\Src\gd32f30x_it.c)(0x6048B635)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\gd32f30x_it.o --omf_browse .\gd32\gd32f30x_it.crf --depend .\gd32\gd32f30x_it.d)
 I (..\Inc\gd32f30x_it.h)(0x60307C84)
 I (..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x60307C84)
 I (..\GD32\CMSIS\core_cm4.h)(0x60307C84)
@@ -33,8 +33,8 @@ I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x60307C84)
-I (..\Inc\systick.h)(0x603376F0)
-F (..\Src\main.c)(0x6033772A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\main.o --omf_browse .\gd32\main.crf --depend .\gd32\main.d)
+I (..\Inc\systick.h)(0x6047369E)
+F (..\Src\main.c)(0x6049CBE9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\main.o --omf_browse .\gd32\main.crf --depend .\gd32\main.d)
 I (..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x60307C84)
 I (..\GD32\CMSIS\core_cm4.h)(0x60307C84)
 I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -68,8 +68,8 @@ I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x60307C84)
 I (F:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\Inc\systick.h)(0x603376F0)
-I (..\Inc\usart.h)(0x60307C84)
+I (..\Inc\systick.h)(0x6047369E)
+I (..\Inc\usart.h)(0x6049CBE9)
 I (..\Inc\gpio.h)(0x60307C84)
 I (F:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\FreeRTOS.h)(0x5EAA23A8)
 I (F:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
@@ -86,8 +86,8 @@ I (F:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\task.h)(0x5EAA23
 I (F:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include\list.h)(0x5EAA23A8)
 I (F:\Keil_v5\ARM\ARMCC\include\limits.h)(0x599ECD2A)
 I (..\AES\hal_aes_api.h)(0x5FD47502)
-F (..\Src\usart.c)(0x60307C84)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\usart.o --omf_browse .\gd32\usart.crf --depend .\gd32\usart.d)
-I (..\Inc\usart.h)(0x60307C84)
+F (..\Src\usart.c)(0x6049916D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\usart.o --omf_browse .\gd32\usart.crf --depend .\gd32\usart.d)
+I (..\Inc\usart.h)(0x6049CBE9)
 I (..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x60307C84)
 I (..\GD32\CMSIS\core_cm4.h)(0x60307C84)
 I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -121,6 +121,8 @@ I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x60307C84)
 I (F:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (F:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (F:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 F (..\Src\gpio.c)(0x60307C84)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\gpio.o --omf_browse .\gd32\gpio.crf --depend .\gd32\gpio.d)
 I (..\Inc\gpio.h)(0x60307C84)
 I (..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x60307C84)
@@ -155,7 +157,7 @@ I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x60307C84)
-F (..\Src\systick.c)(0x60337705)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\systick.o --omf_browse .\gd32\systick.crf --depend .\gd32\systick.d)
+F (..\Src\systick.c)(0x60475718)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\systick.o --omf_browse .\gd32\systick.crf --depend .\gd32\systick.d)
 I (..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h)(0x60307C84)
 I (..\GD32\CMSIS\core_cm4.h)(0x60307C84)
 I (F:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -188,7 +190,7 @@ I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_wwdgt.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_misc.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_enet.h)(0x60307C84)
 I (..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_exmc.h)(0x60307C84)
-I (..\Inc\systick.h)(0x603376F0)
+I (..\Inc\systick.h)(0x6047369E)
 F (..\AES\hal_aes_api.c)(0x6030EC98)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\GD32\CMSIS\GD\GD32F30x\Include -I ..\GD32\GD32F30x_standard_peripheral\Include -I ..\GD32\CMSIS -I ..\Inc -I ..\AES-I.\RTE\RTOS-I.\RTE\_FreeRTOS-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\CMSIS\RTOS2\FreeRTOS\Include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\include-IF:\Keil_v5\ARM\PACK\ARM\CMSIS-FreeRTOS\10.3.1\Source\portable\RVDS\ARM_CM4F-IF:\Keil_v5\ARM\PACK\GigaDevice\GD32F30x_DFP\2.1.0\Device\Include-IF:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -D_RTE_ -DGD32F30X_HD -DUSE_STDPERIPH_DRIVER -DGD32F30X_HD-o .\gd32\hal_aes_api.o --omf_browse .\gd32\hal_aes_api.crf --depend .\gd32\hal_aes_api.d)
 I (..\AES\soft_aes.h)(0x5F2630C6)
 I (..\AES\hal_aes_api.h)(0x5FD47502)

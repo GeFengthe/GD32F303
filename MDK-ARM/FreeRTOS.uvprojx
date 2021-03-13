@@ -416,6 +416,11 @@
               <FileType>1</FileType>
               <FilePath>..\AES\soft_aes.c</FilePath>
             </File>
+            <File>
+              <FileName>ec600.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\ec600.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -987,6 +992,11 @@
               <FileName>soft_aes.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\AES\soft_aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>ec600.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\ec600.c</FilePath>
             </File>
           </Files>
         </Group>

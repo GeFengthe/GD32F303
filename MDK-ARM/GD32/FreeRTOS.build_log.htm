@@ -27,11 +27,15 @@ Project File Date:  02/20/2021
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'F:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'FreeRTOS'
+compiling usart.c...
 compiling main.c...
+..\Src\main.c(221): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=12384 RO-data=9080 RW-data=132 ZI-data=18636  
+Program Size: Code=12952 RO-data=336 RW-data=140 ZI-data=19148  
 FromELF: creating hex file...
-".\GD32\FreeRTOS.axf" - 0 Error(s), 0 Warning(s).
+".\GD32\FreeRTOS.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -62,14 +66,14 @@ Package Vendor: GigaDevice
       Include file:  Config\ARMCM\FreeRTOSConfig.h
 
    * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.3.1
-      Source file:   Source\list.c
-      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
-      Source file:   Source\tasks.c
-      Include file:  Source\include\task.h
-      Include file:  Source\include\queue.h
-      Include file:  Source\include\semphr.h
-      Source file:   Source\queue.c
       Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
+      Source file:   Source\queue.c
+      Source file:   Source\tasks.c
+      Source file:   Source\list.c
+      Include file:  Source\include\semphr.h
+      Source file:   Source\portable\RVDS\ARM_CM4F\port.c
       Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
 
    * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.3.1
