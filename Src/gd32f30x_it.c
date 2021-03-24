@@ -37,7 +37,6 @@ OF SUCH DAMAGE.
 */
 
 #include "gd32f30x_it.h"
-#include "systick.h"
 
 /*!
     \brief      this function handles NMI exception
@@ -49,18 +48,6 @@ void NMI_Handler(void)
 {
 }
 
-/*!
-    \brief      this function handles HardFault exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void HardFault_Handler(void)
-{
-    /* if Hard Fault exception occurs, go to infinite loop */
-    while (1){
-    }
-}
 
 /*!
     \brief      this function handles MemManage exception
@@ -102,6 +89,16 @@ void UsageFault_Handler(void)
 }
 
 /*!
+    \brief      this function handles SVC exception
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+void SVC_Handler(void)
+{
+}
+
+/*!
     \brief      this function handles DebugMon exception
     \param[in]  none
     \param[out] none
@@ -110,7 +107,3 @@ void UsageFault_Handler(void)
 void DebugMon_Handler(void)
 {
 }
-
-
-
-

@@ -47,7 +47,7 @@ OF SUCH DAMAGE.
 /* configure systick */
 void systick_config(void);
 /* delay a time in milliseconds */
-void delay_us(uint32_t count);
+void delay(uint32_t count);
 /* delay a time in milliseconds with low power */
 void delay_lp(uint32_t count);
 /* delay decrement */
@@ -62,6 +62,5 @@ void systick_EnableIRQ(void);
 void systick_Disable(void);
 void systick_Enable(void);
 void systick_deinit(void);
-extern void delay_ms(uint16_t ms);
 
 #endif /* SYS_TICK_H */

@@ -64,36 +64,14 @@ void systick_config(void)
     \param[in]  count: count in milliseconds
     \param[out] none
     \retval     none
-内核时钟 ：SystemCoreClock  120M 1us需要120
 */
-void delay_us(uint32_t count)
+void delay(uint32_t count)
 {
-    uint32_t tickcnt;
-    uint32_t ticksrt;
-    uint32_t tickend;
-    uint32_t reload=SysTick->LOAD;                                       //获取滴答定时器的重载值
-    uint32_t ticktotal = count*120;                                       //获取延迟需要的节拍数
-    ticksrt =SysTick->VAL;                                              //获取当前值
-    tickcnt =0;                                                
-    while(1)
-    {
-        tickend =SysTick->VAL;
-        if(tickend != ticksrt)
-        {
-            if(tickend > ticksrt)
-                tickcnt+=reload -tickend+ticksrt;
-            else
-                tickcnt+=ticksrt -tickend;
-            ticksrt =tickend;
-        }
-        if(tickcnt >=ticktotal)
-            break;
-    }
-}
+		uint32_t utick;
+    utick = count + get_tick();
 
-void delay_ms(uint16_t ms)
-{
-    delay_us(ms*1000);
+    while(get_tick() < utick){
+    }
 }
 
 /*!

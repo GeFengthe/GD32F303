@@ -1,11 +1,12 @@
 .\gd32\gd32f30x_fwdgt.o: ..\GD32\GD32F30x_standard_peripheral\Source\gd32f30x_fwdgt.c
 .\gd32\gd32f30x_fwdgt.o: ..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_fwdgt.h
 .\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\GD\GD32F30x\Include\gd32f30x.h
-.\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\core_cm4.h
+.\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
 .\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\core_cmInstr.h
-.\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\core_cmFunc.h
-.\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\core_cm4_simd.h
+.\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\gd32\gd32f30x_fwdgt.o: F:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
 .\gd32\gd32f30x_fwdgt.o: ..\GD32\CMSIS\GD\GD32F30x\Include\system_gd32f30x.h
 .\gd32\gd32f30x_fwdgt.o: ..\Inc\gd32f30x_libopt.h
 .\gd32\gd32f30x_fwdgt.o: ..\GD32\GD32F30x_standard_peripheral\Include\gd32f30x_rcu.h
